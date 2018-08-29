@@ -1,0 +1,17 @@
+/* ==========================================================================
+   #CATALOGUE HEADER
+   ========================================================================== */
+
+.c-catalogue-header {
+  overflow: auto;
+  padding-right: $spacing;
+  padding-left: $spacing;
+  background-color: #def1f4;
+  line-height: 3.375rem;
+}
+
+  .c-catalogue-header__heading {
+    float: left;
+    font-size: 2.25rem;
+    font-weight: 700;
+  }

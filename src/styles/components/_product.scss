@@ -1,0 +1,59 @@
+/* ==========================================================================
+   #PRODUCT
+   ========================================================================== */
+
+.c-product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: $spacing;
+  border-right: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+}
+
+  .c-product__meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-top: auto;
+    padding-top: 1.25rem;
+    width: 100%;
+    font-weight: 700;
+    line-height: 1;
+  }
+
+    .c-product__name {
+      font-size: 1.5rem;
+    }
+
+    /**
+     * 1. Leave some breathing room between this and the product name.
+     * 2. Prevent price from wrapping under any circumstances.
+     */
+    .c-product__price {
+      margin-left: 1.25rem; /* [1] */
+      font-size: 2.25rem;
+      white-space: nowrap; /* [2] */
+    }
+
+
+
+
+
+/**
+ * Modifier Child Components
+ */
+
+.c-product .c-tag {
+  align-self: flex-start;
+}
+
+.c-product--sale .c-tag {
+  background-color: #cc3333;
+}
+
+.c-product--exclusive .c-tag {
+  padding-right: 2.25rem;
+  padding-left: 2.25rem;
+  background-color: #009900;
+}

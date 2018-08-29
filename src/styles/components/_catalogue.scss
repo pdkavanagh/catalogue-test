@@ -1,0 +1,12 @@
+/* ==========================================================================
+   #CATALOGUE
+   ========================================================================== */
+
+.c-catalogue {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(18.75rem, 1fr));
+  grid-gap: 1px;
+  margin-top: $spacing;
+  border-top: 1px solid #e1e1e1;
+  border-left: 1px solid #e1e1e1;
+}
